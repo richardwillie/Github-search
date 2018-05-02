@@ -12,8 +12,9 @@ export class ProfileService {
     console.log("service is now ready!")
     this.userName = "richardwillie"
   }
+  
   getProfileinfo(){
-  return this.http.get("https://api.github.com/users/richardwillie"+this.userName+"?client_Id=" + this.clientId + "&client_Secret=" + this.clientSecret)
+  return this.http.get("https://api.github.com/users/"+this.userName+"?client_Id=" + this.clientId + "&client_Secret=" + this.clientSecret)
   .map(res => res.json());
  }
 }

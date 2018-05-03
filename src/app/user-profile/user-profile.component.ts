@@ -7,6 +7,7 @@ import { Profile } from 'selenium-webdriver/firefox';
   templateUrl: './user-profile.component.html',
   styleUrls: ['./user-profile.component.css']
 })
+
 export class UserProfileComponent implements OnInit {
   profile:any[]
 
@@ -21,3 +22,4 @@ export class UserProfileComponent implements OnInit {
   }
 
 }
+ 

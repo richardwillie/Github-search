@@ -17,8 +17,21 @@ export class UserProfileComponent implements OnInit {
   // newSearch = new GithubSearch("")
 
   constructor(private profileService:ProfileService) {
+    this.profileService.getProfileinfo().subscribe(profile=>{
+      console.log(profile);
+      this.profile = profile;
+    });
+    this.profileService.getProfileRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
+    });
+       
    }
-   findProfile(){
+ 
+
+  ngOnInit() {
+  }
+  findProfile(){
     console.log();
     this.profileService.updateProfile(this.username);
     this.profileService.getProfileinfo().subscribe(profile=>{
@@ -30,9 +43,5 @@ export class UserProfileComponent implements OnInit {
       this.repos = repos;
     })
    }
-
-  ngOnInit() {
-  }
-
 }
  

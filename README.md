@@ -1,6 +1,22 @@
-# GithubSearch
+## GithubSearch ##
+
+# Description #
+This project was designeed to search for users on Github,view their various repositories and projects,their followers and those that follow them.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+
+## project installation ##
+
+* open github.com
+
+* search for richard willie 
+
+* access the github search repository
+
+* click on the link and start your searches
+
+* you can find this app on the link below.
+
 
 ## Development server
 
@@ -25,3 +41,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+

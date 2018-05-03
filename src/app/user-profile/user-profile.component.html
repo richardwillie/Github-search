@@ -16,6 +16,16 @@
                         <li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
                     </ul>
                 </div>
+                <div class="class col-sm-4">
+                    <div>
+                        <p>
+                            <span class="badge badge-pill badge-primary">Followers{{profile.followers}}</span>
+                            <span class="badge badge-pill badge-primary">Followings{{profile.followings}}</span>
+                            <span class="badge badge-pill badge-primary">Public Repos{{profile.public_repos}}</span>
+                            <span class="badge badge-pill badge-primary">Public Gists{{profile.public_gists}}</span>
+                        </p>
+                    </div>
+                </div>
 
             </div>
 

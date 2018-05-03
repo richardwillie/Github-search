@@ -19,9 +19,12 @@
                 <div class="class col-sm-4">
                     <div>
                         <p>
-                            <span class="badge badge-pill badge-primary">Followers{{profile.followers}}</span>
-                            <span class="badge badge-pill badge-primary">Followings{{profile.followings}}</span>
-                            <span class="badge badge-pill badge-primary">Public Repos{{profile.public_repos}}</span>
+                            <a href="{{profile.html_url}}" target="blank" class="btn btn-danger btn-lg">View Profile on Github</a>
+                        </p>
+                        <p>
+                            <span class="badge badge-pill badge-info">Followers{{profile.followers}}</span>
+                            <span class="badge badge-pill badge-success">Followings{{profile.followings}}</span>
+                            <span class="badge badge-pill badge-secondary">Public Repos{{profile.public_repos}}</span>
                             <span class="badge badge-pill badge-primary">Public Gists{{profile.public_gists}}</span>
                         </p>
                     </div>

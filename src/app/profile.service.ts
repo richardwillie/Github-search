@@ -21,4 +21,7 @@ export class ProfileService {
   return this.http.get("https://api.github.com/users/"+this.userName+"/repos?client_Id=" + this.clientId + "&client_Secret=" + this.clientSecret)
   .map(res => res.json());
  }
+ updateProfile(username:string){
+   this.userName =username
+ }
 }

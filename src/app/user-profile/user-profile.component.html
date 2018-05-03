@@ -19,7 +19,7 @@
                 <div class="class col-sm-4">
                     <div>
                         <p>
-                            <a href="{{profile.html_url}}" target="blank" class="btn btn-danger btn-lg">View Profile on Github</a>
+                            <a href="{{profile.html_url}}" target="_blank" class="btn btn-danger btn-lg">View Profile on Github</a>
                         </p>
                         <p>
                             <span class="badge badge-pill badge-info">Followers{{profile.followers}}</span>
@@ -36,9 +36,9 @@
                         <div class="card-body">
                             <h4 class="card-title">Repos</h4>
                             <p class="card-text" *ngFor="let repo of repos">
-                                {{repo.name}} <a href="{{repo.html_html}}" class="btn btn-outline-warning">view this project on Github</a>
-
+                                {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-outline-warning float-right">view this project on Github</a>
                             </p>
+                            <!-- <p>{{repo.description}}</p> -->
                         </div>
                     </div>
                 </div>

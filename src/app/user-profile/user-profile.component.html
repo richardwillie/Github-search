@@ -2,12 +2,19 @@
     <div class="card">
         <div class="card-header">
             {{profile.name}}<small>({{profile.login}})</small>
-            <span *ngIf="profile.company">Works at {{profile.company}}</span>{{profile.location}}
+            <span *ngIf="profile.company">Works at {{profile.company}}</span> {{profile.location}}
         </div>
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-3">
                     <img src="{{profile.avatar_url}}" class=" img-circle img-fluid" alt="profile image">
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                        <li class="list-group-item" *ngIf="profile.hireable">available for hire</li>
+                        <li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
+                    </ul>
                 </div>
 
             </div>

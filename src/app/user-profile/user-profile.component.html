@@ -23,10 +23,23 @@
                         </p>
                         <p>
                             <span class="badge badge-pill badge-info">Followers{{profile.followers}}</span>
-                            <span class="badge badge-pill badge-success">Followings{{profile.followings}}</span>
+                            <span class="badge badge-pill badge-success">Following{{profile.following}}</span>
                             <span class="badge badge-pill badge-secondary">Public Repos{{profile.public_repos}}</span>
                             <span class="badge badge-pill badge-primary">Public Gists{{profile.public_gists}}</span>
                         </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Repos</h4>
+                            <p class="card-text" *ngFor="let repo of repos">
+                                {{repo.name}} <a href="{{repo.html_html}}" class="btn btn-outline-warning">view this project on Github</a>
+
+                            </p>
+                        </div>
                     </div>
                 </div>
 
